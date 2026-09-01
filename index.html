@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nada Ahmed Tolba</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Passion+One:wght@400;700;900&family=Valley+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#myNavbar" data-bs-offset="80">
+    <!-- 1. Use the navbar component with fixed-top -->
+    <nav class="navbar navbar-expand-md text-bg-dark fixed-top">
+      <div class="container d-flex flex-column align-items-center">
+        <!-- 2. The Hamburger Button (Only visible on small mobile screens) -->
+        <button
+          class="navbar-toggler navbar-dark my-2 align-self-end"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#myNavbar"
+          aria-controls="myNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- 3. The Collapsible Menu Container -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="myNavbar"
+        >
+          <!-- 4. Your original nav items inside -->
+          <ul class="navbar-nav nav-pills py-2 text-center gap-1">
+            <li class="nav-item">
+              <a href="#home" class="nav-link text-white" aria-current="page"
+                >Me</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#softskills" class="nav-link text-white">Soft Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#cert" class="nav-link text-white"
+                >Interships & Courses Certificates</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#pr" class="nav-link text-white">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#act" class="nav-link text-white"
+                >Leadership & Activities</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#cont" class="nav-link text-white">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="gradient-background" id="home">
+      <div
+        class="container col-xxl-8 px-4 py-5 min-vh-100 d-md-flex align-items-md-center justify-content-md-center d-lg-block"
+      >
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-12 col-sm-8 col-lg-6 mx-auto">
+            <img
+              src="./imgs/myimg.jpg"
+              class="d-block mx-lg-auto img-fluid pfp"
+              alt="Bootstrap Themes"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6 mx-auto" style="max-width: 500px">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Nada Ahmed Tolba</h1>
+            <p class="lead">
+              Hi! I'm a Software Engineer. <br />
+              Scroll to know more about me!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="soft-skills" id="softskills">
+      <div class="container px-4" id="featured-3">
+        <h2 class="mb-5">Soft Skills</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <div class="d-inline-flex text-primary fs-4">
+              <img
+                src="./imgs/love.png"
+                alt=""
+                style="height: 50px; width: 50px"
+              />
+            </div>
+            <h3 class="fs-2 text-body-emphasis mt-3">
+              Communication & Emotional Intelligence
+            </h3>
+          </div>
+          <div class="feature col">
+            <div class="d-inline-flex text-primary fs-4">
+              <img
+                src="./imgs/collaboration.png"
+                alt=""
+                style="height: 50px; width: 50px"
+              />
+            </div>
+            <h3 class="fs-2 text-body-emphasis mt-3">Teamwork</h3>
+          </div>
+          <div class="feature col">
+            <div class="d-inline-flex text-primary fs-4">
+              <img
+                src="./imgs/creativity.png"
+                alt=""
+                style="height: 50px; width: 50px"
+              />
+            </div>
+            <h3 class="fs-2 text-body-emphasis mt-3">
+              Problem Solving & Creativity
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="position-relative d-flex align-items-center justify-content-center min-vh-100"
+      style="background-color: #c95c80"
+      id="cert"
+    >
+      <!-- 2. Top-Left Title on the Pink Background -->
+
+      <div class="position-absolute top-0 start-0 p-3 ms-md-5">
+        <div class="container">
+          <div class="row">
+            <h2 class="intern text-white fw-bold">
+              Internships & Courses Certifications
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide carousel-dark mt-5"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./imgs/arkdev.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./imgs/Mdlabs.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./imgs/sprints.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./imgs/nvidia.png" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./imgs/datascience.png" class="d-block w-100" alt="..." />
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="Projects" id="pr">
+      <div class="container px-4 pt-5" id="featured-3">
+        <h2 class="pb-2 mt-5">Projects</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <h3 class="fs-2 text-body-emphasis">Flower Classification</h3>
+            <p>Classifing four types of flowers using CNN</p>
+            <a
+              href="https://github.com/Nada-ASamir/Classification-model"
+              class="icon-link link-dark"
+            >
+              Github Repo
+              <img src="./imgs/chevron-right.svg" alt="" />
+            </a>
+          </div>
+          <div class="feature col">
+            <h3 class="fs-2 text-body-emphasis">Heart Disease Detection</h3>
+            <p>
+              The goal is to predict the presence of heart disease from clinical
+              and demographic patient data. Includes full EDA, preprocessing,
+              model comparison, and an interactive web interface built with
+              NiceGUI.
+            </p>
+            <a
+              href="https://github.com/Nada-ASamir/Heart-Disease-Prediction"
+              class="icon-link link-dark"
+            >
+              Github Repo
+              <img src="./imgs/chevron-right.svg" alt="" />
+            </a>
+          </div>
+          <div class="feature col">
+            <h3 class="fs-2 text-body-emphasis">Pet Adoption System</h3>
+            <p>
+              A pretty simple C++ project for college course Structured
+              Programming. Using the concept of Structs and Functions. It allows
+              users to register, login, submit an adoption request all in a
+              terminal based and file handleing approach.
+            </p>
+            <a
+              href="https://github.com/Nada-ASamir/Pet-Adoption-System"
+              class="icon-link link-dark"
+            >
+              Github Repo
+              <img src="./imgs/chevron-right.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Projects pb-5">
+      <div class="container px-4 pb-3" id="featured-3">
+        <div class="row g-4 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <h3 class="fs-2 text-body-emphasis">Live Virtual Painter</h3>
+            <p>
+              Real-time hand-tracking drawing application using the Media Pipe
+              hand-landmark model. Designed gesture-based controls for drawing,
+              erasing, color selection, and canvas reset. Prioritized intuitive
+              UX with on-screen color palette indicators and interactive visual
+              feedback.
+            </p>
+            <a
+              href="https://github.com/Nada-ASamir/Virtual-Live-Painter"
+              class="icon-link link-dark"
+            >
+              Github Repo
+              <img src="./imgs/chevron-right.svg" alt="" />
+            </a>
+          </div>
+          <div class="feature col">
+            <h3 class="fs-2 text-body-emphasis">
+              Sofware Engineering Job Simulation
+            </h3>
+            <p>
+              Understood relevant requirements for building a system to manage
+              financial portfolios. Figured out what data the system needed to
+              keep track of. Drafted a visual representation of the data as an
+              entity relationship diagram (ERD). Performed Object-Relational
+              Mapping (ORM) to implement the ERD on IntelliJ with Java.
+            </p>
+            <a
+              href="https://github.com/Nada-ASamir/wells-fargo-task-2"
+              class="icon-link link-dark"
+            >
+              Github Repo
+              <img src="./imgs/chevron-right.svg" alt="" />
+            </a>
+          </div>
+          <div class="feature col">
+            <h3 class="fs-2 text-body-emphasis">
+              Traffic-E-Services-Egyptian-Government-Portal
+            </h3>
+            <p>
+              A database-driven web portal for managing Egyptian traffic
+              services, built as a college project for the Database Management
+              Systems (DBMS) course. Handeling the ERD and mapping to schema.
+              The system handles vehicle registration, license management,
+              traffic violations, payments, government service requests and
+              retrieval from the database — all through a structured relational
+              database backed by an Oracle Forms GUI.
+            </p>
+            <a
+              href="https://github.com/Nada-ASamir/Traffic-E-Services-Egyptian-Government-Portal"
+              class="icon-link link-dark"
+            >
+              Github Repo
+              <img src="./imgs/chevron-right.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="activities" id="act">
+      <div class="d-flex justify-content-center align-items-center min-vh-100">
+        <div class="container">
+          <h2 class="py-5">Leadership & Activities</h2>
+          <div class="row my-5">
+            <div class="col-lg-4">
+              <div class="flexing mb-5">
+                <img src="./imgs/best-practice.png" alt="" height="40px" />
+                <p class="ms-3">
+                  Delivered a Machine Learning session at RoboTech Student
+                  Activity after attending an AI workshop series.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="flexing mb-5">
+                <img src="./imgs/best-practice.png" alt="" height="40px" />
+                <p class="ms-3">
+                  Participated in ACM Student Activity problem-solving sessions;
+                  Solving on a competitive programming platform (Code Forces)
+                  using C++.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="flexing mb-5">
+                <img src="./imgs/best-practice.png" alt="" height="40px" />
+                <p class="ms-3">
+                  Served as a judge for 10 teams of children leading them
+                  through their challenges and explaining to them their tasks at
+                  the Global Robotic Challenge Scratch Games Competition 2025
+                  hosted at the British University in Egypt.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="cont">
+      <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5">
+          <div class="col-lg-3 mb-3 me-2 col-md-12">
+            <a
+              href="/"
+              class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+              aria-label="Bootstrap"
+            >
+              <h2 style="color: white">Contact me</h2>
+            </a>
+          </div>
+          <!-- <div class="col mb-3"></div> -->
+          <div class="col mb-3 mt-2 col-md-12">
+            <h5>
+              <a
+                href="https://www.linkedin.com/in/nada-ahmed-tolba-19055a349/"
+                class="nav-link p-0 text-body-primary"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-linkedin mb-2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                  />
+                </svg>
+                LinkedIn
+              </a>
+            </h5>
+          </div>
+          <div class="col-lg-4 mb-3 mt-2 col-md-12">
+            <h5>
+              <a
+                href="mailto:nadasamiirrr@://gmail.com Nada, I would like to learn more about you."
+                class="nav-link p-0 text-body-primary"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-envelope-at-fill mb-2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"
+                  />
+                  <path
+                    d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"
+                  />
+                </svg>
+                nadasamiirrr@gmail.com
+              </a>
+            </h5>
+          </div>
+          <div class="col mb-3 mt-2 col-md-4 col-md-12">
+            <h5>
+              <a href="#" class="nav-link p-0 text-body-primary">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-telephone-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+                  />
+                </svg>
+                +201009960128
+              </a>
+            </h5>
+          </div>
+        </footer>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

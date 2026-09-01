@@ -1,0 +1,165 @@
+.gradient-background {
+  background: linear-gradient(90deg, #fff7ad, #ffa9f9, #fff7ad);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradientMovement {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* --- Libre Baskerville Font Styles --- */
+.libre-baskerville {
+  font-family: "Libre Baskerville", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Standard reading weight */
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-optical-sizing: auto;
+  font-weight: 700; /* Bold version */
+  font-style: normal;
+}
+
+/* --- Passion One Font Styles --- */
+.passion-one-regular {
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.passion-one-bold {
+  font-family: "Passion One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.passion-one-black {
+  font-family: "Passion One", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.leckerli-one-regular {
+  font-family: "Leckerli One", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.valley-sans-regular {
+  font-family: "Valley Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+}
+.my-bg {
+  background-color: #f7d6d0;
+}
+h1,
+h2 {
+  color: #4a4a4a;
+  font-family: "Leckerli One", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p,
+h3 {
+  color: #4a4a4a;
+  font-family: "Valley Sans", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.img {
+  height: 100%;
+  width: 100%;
+}
+.pfp {
+  border-radius: 50%;
+}
+.soft-skills {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-color: #ea9d9d;
+}
+.carousel {
+  width: 640px;
+  height: 360px;
+}
+.certificates {
+  background-color: #bd5579;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.Projects {
+  background-color: #f7d6d0;
+}
+.activities {
+  height: 100vh;
+  background-color: #ffebb8;
+}
+.flexing {
+  display: flex;
+}
+.contact {
+  background-color: #4a4a4a;
+  color: white;
+  height: 65vh;
+}
+h5 {
+  font-family: "Valley Sans", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Force the active link managed by Scrollspy to be white with dark text */
+#myNavbar .nav-pills .nav-link.active {
+  background-color: #ffffff !important;
+  color: #212529 !important;
+}
+
+/* Ensure the normal inactive links stay white text */
+#myNavbar .nav-pills .nav-link {
+  color: #ffffff;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+.intern {
+  margin-top: 2rem;
+  margin-block-start: 5rem;
+}
+
+/* Keeps links stacked neatly in the center when the mobile menu drops down */
+@media (max-width: 767.98px) {
+  .navbar-collapse {
+    width: 100%;
+  }
+  .intern {
+    margin: 0px important!;
+  }
+}
